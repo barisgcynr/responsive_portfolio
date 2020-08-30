@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Responsive portfolio by barisgcynr</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World!<br>I'm <span>Barış Gücüyener</span></h2>
+            <p>I am studying software development at Yeditepe University.
+            I was born in Turkey and I am living in Istanbul.
+            </p>
+            <a href="#">Know More</a>
+        </div>
+        <u1 class="sci">
+            <li><a href="#"><img src="images/twitter.png" width="100"></a></li>
+            <li><a href="#"><img src="images/github.png" width="100"></a></li>
+        </u1>
+    </section>
+    <div id="navigation">
+        <u1>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </u1>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById("sec");
+            var nav = document.getElementById("navigation");
+            sec.classList.toggle("active");
+            nav.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+
+</html>
